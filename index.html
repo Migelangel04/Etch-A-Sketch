@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Sketcher &#128466</title>
+    <link rel="stylesheet" href="./styles.css"/>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <p>Super Sketcher</p>
+    </header>
+
+    <main class="pageContent" id="pageContent">
+
+        <div class="panel" id="panel">
+
+            <button id="penColorChanger">Pen Color</button>
+            <button id="backgroundChanger">Background Color</button>
+            <button id="eraser">Toggle Eraser</button>
+            <button id="rainbowColor">Toggle Rainbow</button>
+            <button id="shading">Toggle Shade</button>
+            <div class="sliderAndValue">
+                <input type="range" min="1" max="64" value="50" id="gridSlide" class="gridSlide">
+                <p class="value" id="value"> SIZE x SIZE</p>
+            </div>
+            
+            <button id="gridLines">Toggle Grid Lines</button>
+
+        </div>
+        <div class="outterArea">
+            <div class="sketchArea" id="sketchArea">
+
+            </div>
+        </div>
+        
+
+    </main>
+
+    <footer class="footer" id="footer">
+        <p>Webpage Code <a href="https://github.com/Migelangel04/Etch-A-Sketch" class="gitHubLink"> @Migelangel04</a></p>
+    </footer>
+    
+</body>
+</html>
