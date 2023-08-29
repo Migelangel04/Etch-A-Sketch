@@ -100,6 +100,9 @@ body
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    font-size: 18px;
+    font-weight: 600;
+    color: #DA0037;
 }
 
 .gridSlide 
@@ -126,14 +129,25 @@ body
     height: 25px;
     border-radius: 50%;
     background: #DA0037;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
-.sliderAndValue .value
+.panel .penDetails,
+.panel .backgroundDetails,
+.panel .gridDetails
 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
     font-size: 18px;
     font-weight: 600;
     color: #DA0037;
+}
+
+input
+{
+    cursor: pointer;
 }
 
 /* -------------- */
@@ -146,6 +160,7 @@ body
     align-items: center;
     background-color: #444444;
     padding: 20px;
+    transition-duration: 0.4s;
 }
 
 .sketchArea 
@@ -155,7 +170,7 @@ body
     /* justify-content: space-around; */
     background-color: white;
     width: 600px;
-    height: 600px
+    height: 600px;
 }
 
 .sketchArea > div
@@ -174,6 +189,8 @@ body
 .box
 {
     border: 1px solid #171717;
+    background-color: #FFFFFF;
+    cursor: pointer;
 }
 
 /* ----------- */

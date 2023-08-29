@@ -17,31 +17,40 @@
 
         <div class="panel" id="panel">
 
-            <button id="penColorChanger">Pen Color</button>
-            <button id="backgroundChanger">Background Color</button>
+            <div class="penDetails">
+                <input id="penColorChanger" class="penColorChanger" type="color" value="#000000"></input>
+                <p>Pen Color</p>
+            </div>
+            <div class="backgroundDetails">
+                <input id="backgroundChanger" type="color" value="#FFFFFF"></input>
+                <p>Background Color</p>
+            </div>
+            <div class="gridDetails">
+                <input id="gridLines" type="color" value="#171717"></input>
+                <p>Grid Line Color</p>
+            </div>
             <button id="eraser">Toggle Eraser</button>
+            <button id="eraseGrid">Erase Grid</button>
             <button id="rainbowColor">Toggle Rainbow</button>
             <button id="shading">Toggle Shade</button>
             <div class="sliderAndValue">
-                <input type="range" min="1" max="64" value="50" id="gridSlide" class="gridSlide">
-                <p class="value" id="value"> SIZE x SIZE</p>
+                <input type="range" min="1" max="64" value="16" id="gridSlide" class="gridSlide">
+                <p class="gridSlideValue" id="gridSlideValue"> 16 x 16</p>
             </div>
-            
-            <button id="gridLines">Toggle Grid Lines</button>
 
         </div>
         <div class="outterArea">
-            <div class="sketchArea" id="sketchArea">
+            <section class="sketchArea" id="sketchArea">
 
-            </div>
+            </section>
         </div>
-        
-
     </main>
 
     <footer class="footer" id="footer">
         <p>Webpage Code <a href="https://github.com/Migelangel04/Etch-A-Sketch" class="gitHubLink"> @Migelangel04</a></p>
     </footer>
+
+    <!-- <div class="pen"></div> -->
     
 </body>
 </html>
